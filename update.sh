@@ -218,7 +218,8 @@ else
         && echo 36 \
         && source $VENV/bin/activate >> $LOGFILE \
         && echo 38 \
-        && pip3 install setuptools pyasyncore python3 setup.py build >> $LOGFILE \
+        && pip3 install setuptools pyasyncore >> $LOGFILE \
+        && python3 setup.py build >> $LOGFILE \
         && echo 40 \
         && python3 setup.py install >> $LOGFILE \
         && echo 46 \
