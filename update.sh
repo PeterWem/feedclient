@@ -220,7 +220,7 @@ else
         && echo 38 \
         && python3 setup.py build >> $LOGFILE \
         && echo 40 \
-        && python3 setup.py install >> $LOGFILE \
+        && pip3 install setuptools pyasyncore python3 setup.py install >> $LOGFILE \
         && echo 46 \
         && revision > $IPATH/mlat_version || rm -f $IPATH/mlat_version \
         && echo 48 \
